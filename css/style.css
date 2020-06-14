@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-weight: normal;
+}
+.background{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-y: auto;
+}
+.nav{
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top: 15%;
+    left: 0;
+}
+.nav a{
+    text-decoration: none;
+    font-size: 28px;
+    font-family: verdana;
+    font-weight: bold;
+    height: 90px;
+    margin: 5px 0;
+    float: left;
+    display: inline-block;
+    background-color: white;
+    color: black;
+    line-height: 90px;
+    text-align: center;
+    transition: 300ms;
+}
+
+a.active, .nav a:hover{
+    background-color: rgb(128, 77, 0);
+    color: white;
+    width: 100%;
+}
+.a{
+    width: 90%;
+}
+.b{
+    width: 85%;
+}
+.c{
+    width: 75%;
+}
+.d{
+    width: 85%;
+}
+
+.content{
+    position: absolute;
+    width: 800px;
+    min-height: 450px;
+    height: auto;
+    //background-color: rgb(255, 102, 0);
+    right: 4%;
+    top: 13%;
+}
+.HOME{
+    position: absolute;
+    right: 0;
+    bottom: -80px;
+    color: white;
+    font-family: verdana;
+}
+.HOME .IMAGE{
+    width: 25%;
+    margin: 3%;
+    float: right;
+    padding-right: 50px;
+}
+.IMAGE img:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+.HOME h1{
+    font-size: 95px;
+    padding-right: 90px;
+    border-bottom: 5px solid white;
+    text-transform: uppercase;
+   
+}
+.HOME h2{
+    font-size: 25px;
+    color: white;
+    padding: 5px 0;
+
+}
+
+.INTRO{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    color: white;
+    font-family: verdana;
+    padding: 0 60px;
+    display: none;
+}
+.INTRO p{
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.SKILLSET{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    color: white;
+    font-family: verdana;
+    padding: 0 60px;
+    display: none;
+}
+.SKILLSET p{
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.CONTACTME{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    color: white;
+    font-family: verdana;
+    padding: 0 60px;
+    display: none;
+}
+.inputtext{
+    width: 55%;
+    height: 65px;
+    border: 3px solid olivedrab;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    font-size: 20px;
+    padding: 0 10px;
+    float: left;
+    margin-bottom: 15px;
+}
+.inputmessage{
+    width: 55%;
+    height: 135px;
+    border: 2px solid olivedrab;
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    font-size: 20px;
+    padding: 0 10px;
+    float: left;
+}
+.submitbutton{
+    width: 160px;
+    height: 65px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    border: none;
+    font-weight: bold;
+    float: left;
+    clear: both;
+    margin-top: 30px;
+}
+
+@media only screen and(max-width: 768px) {
+    
+    .nav a{
+        font-size: 10px;
+        width: auto;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 10px;
+        margin: 0 5px;
+
+    }
+    a.active, .nav a:hover{
+        width: auto;
+    }
+    .nav{
+        width: 100%;
+        top: 20px;
+        z-index: 99;
+    }
+
+    .HOME h1{
+        font-size: 22px;
+        padding-right: 0;
+        border-bottom: none;
+    }
+    .HOME h2{
+        font-size: 18px;
+
+    }
+    .content{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        min-height: inherit;
+    }
+    .HOME{
+        left: 0;
+        text-align: center;
+        bottom: 50px;
+    }
+
+    .background{
+        background-position: center;
+    }
+    .IMAGE{
+        position: center;
+    }
+    .INTRO{
+        width: 90%;
+        margin: 0 auto;
+        padding: 100px 0 0;
+        top: 0;
+        left: 0;
+    }
+    .INTRO p{
+        font-size: 14px;
+    }
+    .CONTACTME{
+        width: 90%;
+        margin: 0 auto;
+        padding: 100px 0 0;
+        top: 0;
+        left: 0;
+    }
+    .inputtext{
+        width: 100%;
+        height: 30px;
+        font-size: 12px;
+        padding: 0 5px;
+        margin-bottom: 5px;
+        box-sizing: border-box;
+    }
+    .inputmessage{
+        height: 80px;
+        padding-right: 5px;
+    }
+    .submitbutton{
+        width: 100%;
+        height: 35px;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+}

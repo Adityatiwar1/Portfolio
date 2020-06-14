@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title></title>
+      <meta charset="utf-8">
+      <meta name="viewport"content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+ </head>
+
+ <body>
+     <div class="background">
+     <div class="nav">
+         <a class="a active" href="#">HOME</a>
+         <a class="b" href="#">INTRO</a>
+         <a class="c" href="#">SKILLSET</a>
+         <a class="d" href="#">CONTACT ME</a>
+     </div>
+
+     <div class="content">
+         <div class="HOME">
+           <div class="IMAGE">
+            <img src="images/9.jpeg">
+           </div> 
+             <h1>ADITYA TIWARI</h1>
+             <h2>Biomedical Engineering</h2>
+         </div>
+         <div class="INTRO">
+            <p>
+                <b>Hello, </b><br>
+                <i>Welcome to my webpage.</i> <br>
+                I am Aditya Tiwari pursuing Biomedical Engineering from NIT Raipur. 
+                I have been brought up in a city of UP, interested in Web Development and 
+                have desires to become a Full Stack Developer soon. 
+                I really like to connect with people around and try to learn from their experiences.  
+                Presently I am also practising Competitive Programming.<br>
+                For any queries/feedback, you can contact me at the described link.<br>
+            </p>
+         </div>
+         <div class="SKILLSET">
+            <p>
+                I am compatible with C and C++ for Programming, I had started to learn programming from class 11th.<br>
+                My interest areas include primarily core development, I am learning languages like HTML, CSS, JS & its libraries.<br>
+                Web Development & its working really amazes me.<br>
+                I am just a beginner and thus am almost unable to present a project/work.<br><br>
+
+                I have a learning attitude, try to understand a lot of things faster. 
+                I also am able to express in front of large audience. 
+                People say that I possess leadership, cooperative & managerial skills.
+            </p>
+         </div>
+         <div class="CONTACTME">
+            <div class="contactform">
+               <form actions="Port.html"methods="post">
+                  <input type="text" name="" class="inputtext" value="Your Name">
+                  <input type="text" name="" class="inputtext" value="Your Email">
+                  <input type="text" name="" class="inputtext" value="Your Contact No.">
+                  <textarea cols="10" rows="2" class="inputmessage">Your Message/Queries..</textarea><br>
+                  <input type="button" name="" class="submitbutton" value="Submit">
+               </form>
+
+            </div>
+         </div>
+     </div>
+
+     </div>
+  <script type="text/javascript" src="js/jquery-3.4.1.min(prod).js"></script>
+  <script type="text/javascript">
+  
+     $(document).ready(function(){
+         $('a').click(function(){
+            //alert("i am click");
+            var selected= $(this);
+            $('a').removeClass ('active');
+            $(selected).addClass('active');
+
+         });
+
+         var $a = $('.a'),
+         $b = $('.b'),
+         $c = $('.c'),
+         $d = $('.d'),
+         $HOME = $('.HOME'),
+         $INTRO = $('.INTRO'),
+         $SKILLSET = $('.SKILLSET'),
+         $CONTACTME = $('.CONTACTME');
+
+         $a.click(function(){
+            
+            $HOME.fadeIn();
+            $INTRO.fadeOut();
+            $SKILLSET.fadeOut();
+            $CONTACTME.fadeOut();
+         });
+         $b.click(function(){
+             
+             $INTRO.fadeIn();
+             $HOME.fadeOut();
+             $SKILLSET.fadeOut();
+             $CONTACTME.fadeOut();
+         });
+         $c.click(function(){
+            
+            $SKILLSET.fadeIn();
+            $HOME.fadeOut();
+            $INTRO.fadeOut();
+            $CONTACTME.fadeOut();
+         });
+         $d.click(function(){
+            
+            $CONTACTME.fadeIn();
+            $HOME.fadeOut();
+            $INTRO.fadeOut();
+            $SKILLSET.fadeOut();
+         });
+     });
+  </script>
+ </body>
+</html>
